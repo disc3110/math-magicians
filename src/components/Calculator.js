@@ -2,6 +2,7 @@
 import './Calculator.css';
 import React from 'react';
 import calculate from '../logic/calculate';
+import calcDisplay from '../logic/display';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -23,14 +24,14 @@ class Calculator extends React.Component {
 
   render() {
     const { calcObj } = this.state;
-    const { next } = calcObj;
+    console.log(calcObj);
     return (
       <div className="container">
-        <div className="screen dg">{ next }</div>
+        <div className="screen dg">{ calcDisplay(calcObj) }</div>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation('AC')}>AC</button>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation('+/-')}>+/-</button>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation('%')}>%</button>
-        <button className="orange" type="button" onClick={() => this.handleEvaluation('+')}>+</button>
+        <button className="orange" type="button" onClick={() => this.handleEvaluation('÷')}>÷</button>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation(7)}>7</button>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation(8)}>8</button>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation(9)}>9</button>
@@ -42,7 +43,7 @@ class Calculator extends React.Component {
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation(1)}>1</button>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation(2)}>2</button>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation(3)}>3</button>
-        <button className="orange" type="button" onClick={() => this.handleEvaluation('÷')}>÷</button>
+        <button className="orange" type="button" onClick={() => this.handleEvaluation('+')}>+</button>
         <button className="lightgray" type="button" id="zero" onClick={() => this.handleEvaluation(0)}>0</button>
         <button className="lightgray" type="button" onClick={() => this.handleEvaluation('.')}>.</button>
         <button className="orange" type="button" onClick={() => this.handleEvaluation('=')}>=</button>

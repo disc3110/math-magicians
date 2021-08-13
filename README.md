@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Movies revies Captones
+# Math Magicians
 > This page is a calculator where you can do all basic operations
 
 # Screenshots
