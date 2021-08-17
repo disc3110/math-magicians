@@ -6,10 +6,6 @@
 # Screenshots
 ![screenshot](screenshot.png)
 
-## Live Demo
-
-You can see my page live [here](https://disc3110.github.io/math-magicians/)
-
 ## Built With
 - React
 - css3
