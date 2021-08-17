@@ -1,0 +1,10 @@
+.quote {
+  font-size: 5rem;
+  color: rgb(225, 229, 233);
+  height: 50vh;
+  padding: 5rem;
+}
+.quote p {
+  margin: auto;
+  text-align: center;
+}

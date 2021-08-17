@@ -16,11 +16,11 @@ const Calculator = () => {
   };
 
   return (
-    <>
-      <div>
+    <section className="calc-container">
+      <div className="instructions">
         <h2>Lets do some math</h2>
       </div>
-      <div className="container">
+      <div className="calculator">
         <div className="screen dg">{ calcDisplay(calcObj) }</div>
         <button className="lightgray" type="button" onClick={() => handleEvaluation('AC')}>AC</button>
         <button className="lightgray" type="button" onClick={() => handleEvaluation('+/-')}>+/-</button>
@@ -42,7 +42,7 @@ const Calculator = () => {
         <button className="lightgray" type="button" onClick={() => handleEvaluation('.')}>.</button>
         <button className="orange" type="button" onClick={() => handleEvaluation('=')}>=</button>
       </div>
-    </>
+    </section>
   );
 };
 

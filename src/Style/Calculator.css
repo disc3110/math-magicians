@@ -2,7 +2,19 @@ body {
   background-color: black;
 }
 
-.container {
+.calc-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  color: aliceblue;
+}
+
+.instructions {
+  font-size: 1.8rem;
+  width: 30%;
+}
+
+.calculator {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 500px;

@@ -1,5 +1,5 @@
 header {
-  background-color: bisque;
+  background-color: rgb(123, 123, 123);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,11 +8,18 @@ header {
 header h1 {
   margin-left: 1.2rem;
   font-size: 3rem;
+  color: rgb(168, 231, 233);
 }
 header li {
   display: inline-block;
   margin: auto .5rem;
   font-size: 1.5rem;
+  color: rgb(168, 231, 233);
+}
+header a {
+  color: rgb(168, 231, 233);
+  text-decoration: none;
+  font-size: 2rem;
 }
 header li::after {
   content: " | ";
