@@ -2,10 +2,12 @@
   color: aliceblue;
   margin: 2rem;
 }
+
 .home h2 {
   font-size: 4rem;
 }
+
 .home p {
   font-size: 1.6rem;
-  margin: .8rem 0;
+  margin: 0.8rem 0;
 }
