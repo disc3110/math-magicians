@@ -3,6 +3,9 @@
 # Math Magicians
 > This page is a calculator where you can do all basic operations
 
+# Live demo
+You can see my page live [here](https://disc3110.github.io/math-magicians/)
+
 # Screenshots
 ![screenshot](screenshot.png)
 
