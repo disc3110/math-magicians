@@ -3,6 +3,7 @@ import React from 'react';
 import {
   Switch,
   Route,
+  BrowserRouter as Router,
 } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Header from './components/Header';
@@ -13,18 +14,20 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <Switch>
-          <Route path="/calculator">
-            <Calculator />
-          </Route>
-          <Route path="/quote">
-            <Quote />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Router>
+          <Header />
+          <Switch>
+            <Route path="/calculator">
+              <Calculator />
+            </Route>
+            <Route path="/quote">
+              <Quote />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     );
   }
