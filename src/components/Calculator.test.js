@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
@@ -39,12 +40,14 @@ describe('Calculator render operators', () => {
   });
 });
 
-// describe('Test click component', () => {
-//   const mockHandleClick = jest.fn();
-//   const component = render(<Calculator />);
-//   const divButton = component.getAllByRole('button')[0];
-//   test('Testing MainContainer component render and call an event click', () => {
-//     fireEvent.click(divButton);
-//     expect(mockHandleClick.mock.calls.length).toBe(1);
-//   });
-// });
+describe('Test button creation and event handling', () => {
+  const Button = ({ onClick, children }) => (
+    <button type="button" onClick={onClick}>{children}</button>
+  );
+  test('Test click', () => {
+    const handleClick = jest.fn();
+    render(<Button onClick={handleClick}>AC</Button>);
+    fireEvent.click(screen.getByText(/AC/i));
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
+});
